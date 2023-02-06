@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite" verbose="1" >
+    <parameter name="url" value="https://riderph.vercel.app" />
+    <test name="Can search in duckduckgo in Firefox">
+        <parameter name="browser" value="Firefox" />
+        <groups>
+            <run>
+                <include name="Regression"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.lemgrb.DuckDuckGoSearchTest">
+            </class>
+        </classes>
+    </test>
+</suite>
