@@ -39,11 +39,13 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <configuration>
             <suiteXmlFiles>
-              <suiteXmlFile>
-                cross-browser.xml
+              <suiteXmlFile>cross-browser.xml
               </suiteXmlFile>
               <suiteXmlFile>
                 regression.xml
+              </suiteXmlFile>
+              <suiteXmlFile>
+                the-internet.xml
               </suiteXmlFile>
             </suiteXmlFiles>
           </configuration>

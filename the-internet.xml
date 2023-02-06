@@ -1,18 +1,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Regression Suite" verbose="1" >
-    <parameter name="rootUrl" value="https://www.duckduckgo.com" />
+<suite name="the-internet" verbose="1" >
+    <parameter name="rootUrl" value="https://the-internet.herokuapp.com" />
     <test name="Can search in duckduckgo in Firefox">
         <parameter name="browser" value="Firefox" />
         <classes>
-            <class name="com.lemgrb.duckduckgo.DuckDuckGoSearchTest">
-            </class>
+            <class name="com.lemgrb.theinternet.DynamicLoadingPageTest" />
         </classes>
     </test>
     <test name="Can search in duckduckgo in Chrome">
         <parameter name="browser" value="Chrome" />
         <classes>
-            <class name="com.lemgrb.duckduckgo.DuckDuckGoSearchTest">
-            </class>
+            <class name="com.lemgrb.theinternet.DynamicLoadingPageTest" />
         </classes>
     </test>
 </suite>
